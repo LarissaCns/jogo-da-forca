@@ -24,3 +24,10 @@ def carrega_palavra_secreta():
 
 def inicializa_letras_acertadas(palavra):
     return ["_" for letra in palavra]
+
+
+def pede_chute():
+    chute = input("Qual letra? ")
+    chute = chute.strip().upper()
+
+    return chute

@@ -5,6 +5,7 @@ def imprime_mensagem_abertura():
     print("***Bem vindo ao jogo da Forca!***")
     print("*********************************")
 
+
 def carrega_palavra_secreta():
     arquivo = open("palavras.txt", "r")
     palavras = []
@@ -19,3 +20,7 @@ def carrega_palavra_secreta():
     palavra_secreta = palavras[numero].upper()
 
     return palavra_secreta
+
+
+def inicializa_letras_acertadas(palavra):
+    return ["_" for letra in palavra]
